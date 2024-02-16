@@ -5,7 +5,7 @@ import { eventItemController } from './eventItem.controller';
 const router = express.Router();
 
 router.post(
-  '/create',
+  '/',
   validateRequest(EventItemValidattions.createEventItemValidationSchema),
   eventItemController.createEvent,
 );
